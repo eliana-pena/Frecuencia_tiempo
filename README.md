@@ -150,9 +150,6 @@ Explica por qué estas frecuencias son adecuadas para el ECG:
 - los filtros butterworth son utlizados por sus características de suavidad y estabilidad en la respuesta de frecuencia
 ## Cálculo y Análisis de Parámetros Básicos de HRV
 
-**Parámetros Calculados**:
-1. **Media de intervalos R-R**: Calculada y convertida a frecuencia cardíaca promedio.
-2. **Desviación estándar de intervalos R-R**: Refleja la variabilidad en la frecuencia cardíaca.
 
 ### Código para Cálculo de Parámetros Básicos
 
