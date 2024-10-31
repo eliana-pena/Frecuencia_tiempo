@@ -72,14 +72,13 @@ La elección de la trasformada de Wavelet Morlet se implementó debido a sus car
 
 ## Diagrama de Proyecto
 
-Incluir un diagrama de flujo que muestre los pasos del proyecto:
-1. **Carga de datos**: Lectura de la señal ECG desde el archivo.
-2. **Preprocesamiento de la señal**: Aplicación de filtros (pasaaltos y pasabajos) para reducir el ruido.
-3. **Detección de picos R**: Uso de `find_peaks` para identificar los picos R en la señal filtrada.
-4. **Cálculo de intervalos R-R**: Extracción y cálculo de intervalos entre picos R consecutivos.
-5. **Interpolación de señal HRV**: Creación de una señal continua a partir de los intervalos R-R.
-6. **Transformada Wavelet Continua**: Descomposición de la señal en frecuencia usando la wavelet Morlet.
-7. **Análisis de Potencia**: Análisis de bandas LF y HF para interpretar la modulación simpática y parasimpática.
+Para la elaboración del proyecto se realizó una planificación con los procesos desarrollados para adquirir la señal y su procesamiento. Como resultado se obtuvo el siguiente diagrama de flujo, que detalla el paso a paso del procedimiento realizado a lo largo del laboratorio. 
+
+![Flowchart (1)](https://github.com/user-attachments/assets/0f7832ca-c8c2-431d-912f-1f4191a7235d)
+
+
+Detallando en las más relevantes luego de la adquisición de la señal ECG y el pre-procesamiento de la señal, se establecieron los datos de la media y desviación estándar de los intervalos R-R, creando así una señal continua, que será interpolada con el fin de poderla graficar, para su posterior procesamiento, donde ya podremos implementar la trasformada de Wavelet continua, teniendo como referencias la onda Morlet, ya pasando a su análisis, se aplicara un espectrograma que nos permita ver todas las característica de la onda como lo es el tiempo, la frecuencia y su potencia. Con los datos ya adquiridos, logramos realizar el respectivo análisis a los datos obtenidos
+
 
 ## Análisis de la Señal Cruda
 ![image](https://github.com/user-attachments/assets/261f8a1c-f2d2-4608-82fd-b727f693e7d8)
