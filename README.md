@@ -63,13 +63,12 @@ $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 1 \quad \text{si} \quad 
 
 **Tipos de Ondas Wavelets**
 
-Con el propósito de representar ciertas funciones en diferentes escalas y posiciones, existen una serie de tipos de señales estandarizadas, para permitirnos suele implementar para el análisis de la variación-tiempo, en la siguiente imagen encontraremos varios tipos de señales, de las culés se implementará la Morlet como la transformada implementada en la señal madre, esto debido a que nos permitirá identificar frecuencias especificas en la señal adquirida, junto a su locación temporal. La
+Con el propósito de representar ciertas funciones en diferentes escalas y posiciones, existen una serie de tipos de señales estandarizadas, para permitirnos suele implementar para el análisis de la variación-tiempo, en la siguiente imagen encontraremos varios tipos de señales, de las culés se implementará la Morlet como la transformada implementada en la señal madre, esto debido a que nos permitirá identificar frecuencias especificas en la señal adquirida, junto a su locación temporal.
 
 ![image](https://github.com/user-attachments/assets/68d02e11-ea0a-4a4a-be5c-cc85876a67a0)
 
 
-### Variabilidad de la Frecuencia Cardíaca (HRV)
-Explica la HRV como un indicador de salud cardiovascular, representado por la variabilidad en los intervalos R-R. Destaca cómo el SNA modula la HRV y su interpretación mediante las bandas de frecuencia. Justifica el uso de la wavelet Morlet para HRV debido a su precisión en la detección de cambios en el tiempo-frecuencia.
+La elección de la trasformada de Wavelet Morlet se implementó debido a sus características de eliminar ruido, preservando así las propiedades ECG, evitando la pérdida importante de detalles fisiológicos, desde un punto de vista computacional, permitiendo evidenciar la detección como lo puede ser el complejo QRS como otras características, en este caso permite detallar con más claridad los intervalos R-R que se aprovecharan principalmente en el siguiente laboratorio.
 
 ## Diagrama de Proyecto
 
