@@ -52,7 +52,7 @@ $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 1 \quad \text{si} \quad 
 
  ![image](https://github.com/user-attachments/assets/3eb42198-fd0b-40a3-8901-5ae802544546)
 
-
+## 6. Referencias
 
 
 
