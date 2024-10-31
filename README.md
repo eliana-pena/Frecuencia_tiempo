@@ -218,6 +218,10 @@ https://www.msdmanuals.com/es/professional/trastornos-neurol%C3%B3gicos/sistema-
 
 [3] DESCOMPOSICIÓN DE SEÑALES, A. D. T. (2006). Introducción a la Transformada Wavelet. Departamento de Señales y sistemas. Universidad de Navarra. https://users.exa.unicen.edu.ar/catedras/escuelapav/cursos/wavelets/apunte.pdf
 
+[5] GE Healthcare. A Guide to ECG Signal Filtering. https://www.gehealthcare.com/insights/article/a-guide-to-ecg-signal-filtering
+
+
+
 [4]A. Galan (2023).¿Qué es la variabilidad de frecuencia cardíaca (HRV)? Neolifesalud. https://www.neolifesalud.com/blog/prevencion-y-antiaging/que-es-la-variabilidad-de-frecuencia-cardiaca-hrv/
 
 
