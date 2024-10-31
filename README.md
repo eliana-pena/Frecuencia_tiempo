@@ -82,22 +82,50 @@ Incluir un diagrama de flujo que muestre los pasos del proyecto:
 7. **Análisis de Potencia**: Análisis de bandas LF y HF para interpretar la modulación simpática y parasimpática.
 
 ## Análisis de la Señal Cruda
+![image](https://github.com/user-attachments/assets/261f8a1c-f2d2-4608-82fd-b727f693e7d8)
+### Frecuencia de Muestreo
+La señal ECG fue registrada con una frecuencia de muestreo de **1000 Hz**, lo cual es adecuado para capturar los detalles finos de la actividad cardíaca, dado que el ECG contiene componentes de frecuencia que se encuentran típicamente entre 0.05 y 150 Hz. La frecuencia de muestreo alta permite una representación precisa de la señal, lo cual es fundamental para identificar los picos R de manera fiable y calcular los intervalos R-R con precisión.
 
-Muestra la señal ECG original e incluye:
-- **Frecuencia de muestreo**: Especificar 1000 Hz como frecuencia de muestreo utilizada.
-- **Tiempo total de muestreo**: Mencionar que la señal representa 5 minutos de duración.
-- **Niveles de cuantificación**: Especificar el número de bits de cuantificación si se conoce.
-- **Estadísticas**: Calcular y mostrar la media, desviación estándar, y otras estadísticas de interés para la señal cruda.
+### Tiempo Total de Muestreo
+La duración de la señal es de **5 minutos** (300 segundos), lo cual proporciona suficiente información para el análisis de la variabilidad de la frecuencia cardíaca (HRV) en una escala de tiempo relativamente larga. La HRV es un indicador robusto del equilibrio autonómico y cardiovascular cuando se mide en períodos largos de tiempo, ya que permite observar las variaciones naturales en la frecuencia cardíaca asociadas al sistema nervioso autónomo (SNA).
 
-### Código para Cálculo de Estadísticas
+### Niveles de Cuantificación
+La señal fue cuantificada con **16 bits**, lo que permite un total de $2^{16}$ niveles de cuantificación, es decir, 65,536 niveles discretos. Este alto nivel de cuantificación garantiza que los detalles sutiles de la amplitud de la señal se capturen con precisión, lo cual es importante para evitar errores en la detección de los picos R y para un análisis de HRV más preciso.
 
-```python
-# Estadísticas principales de la señal cruda
-mean_ecg = np.mean(ecg_signal)
-std_ecg = np.std(ecg_signal)
-print(f"Media de la señal cruda: {mean_ecg}")
-print(f"Desviación estándar de la señal cruda: {std_ecg}")
+### Estadísticas Principales de la Señal Cruda
+
+#### Cálculo de Intervalos R-R
+A partir de los picos R detectados en la señal ECG, se calculó una serie de intervalos R-R, que representan el tiempo entre picos R consecutivos. Los valores de los intervalos R-R en segundos son:
+
 ```
+[0.623, 0.735, 0.629, 0.572, 0.506, 0.73,  0.52,  0.521, 0.701, 0.533, 
+ 0.623, 0.547, 0.546, 0.831, 0.797, 1.045, 0.817, 0.607, 0.909, 0.985, 
+ 0.646, 0.518, 0.622, 0.86, 0.776, 0.514, 0.614, 0.97,  0.79,  0.619, 
+ 0.832, 0.773, 0.611, 0.737, 0.776, 0.957, 0.629, 0.624, 0.624, 0.528, 
+ 0.712, 0.812]
+```
+
+#### Media y Desviación Estándar de los Intervalos R-R
+Los valores promedio y de dispersión calculados para los intervalos R-R son:
+- **Media de Intervalos R-R**: \(0.698\) segundos
+- **Desviación Estándar de Intervalos R-R**: \(0.144\) segundos
+
+#### Análisis de los Valores Calculados
+La **media de los intervalos R-R** de \(0.698\) segundos sugiere una **frecuencia cardíaca promedio** de aproximadamente:
+
+$$
+\text{Frecuencia cardíaca} = \frac{60}{\text{Media de R-R}} = \frac{60}{0.698} \approx 86 \text{ bpm}
+$$
+
+Este valor indica que el sujeto tiene una frecuencia cardíaca en el rango normal para un adulto en reposo, que suele encontrarse entre 60 y 100 bpm. La frecuencia cardíaca promedio ligeramente elevada (86 bpm) podría ser normal o estar influenciada por factores como el estrés, la actividad física reciente o el estado emocional, ya que todos estos factores afectan el equilibrio del sistema nervioso autónomo (SNA) sobre el corazón.
+
+La **desviación estándar de los intervalos R-R** de \(0.144\) segundos refleja la **variabilidad de la frecuencia cardíaca (HRV)**. Una desviación estándar mayor indica una variabilidad en los intervalos R-R, lo cual es generalmente positivo en términos de salud, ya que sugiere un sistema cardiovascular adaptable y con una buena capacidad de respuesta autonómica. Por otro lado, valores de desviación estándar bajos (baja HRV) pueden estar asociados con factores de riesgo cardiovascular y estados de estrés o ansiedad crónicos, que tienden a reducir la modulación parasimpática sobre el corazón.
+
+En la literatura, valores de HRV más elevados en bandas de frecuencia baja (LF) se relacionan con la actividad simpática, mientras que los valores en bandas de frecuencia alta (HF) suelen reflejar la modulación parasimpática. En este caso, la variabilidad medida es moderada, lo cual podría indicar un equilibrio razonable entre ambas ramas del SNA.
+
+**Comparación con Referencias**:
+En estudios de referencia, como los publicados por Task Force of The European Society of Cardiology y The North American Society of Pacing and Electrophysiology, se establece que una HRV moderada es un buen indicador de resiliencia autonómica. El valor de desviación estándar obtenido en esta medición (0.144) se encuentra en un rango esperado para individuos en reposo, lo que sugiere que el sistema cardiovascular del sujeto puede responder adecuadamente a los cambios ambientales y emocionales.
+
 
 ## Diseño y Justificación de Filtros
 
