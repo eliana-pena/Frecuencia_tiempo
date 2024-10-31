@@ -137,6 +137,9 @@ por los cuales se utilizaron filtros butterwoth y para saber el orden del filtro
   
 ![Captura de pantalla (3)](https://github.com/user-attachments/assets/d74b202f-a182-468f-b2d9-c994c4fc5805)
 
+Ahora sabiendo el orden del filtro transformamos nuestro pasa bajos en un pasa altos:
+
+
 
 ### Justificación de la Elección
 Explica por qué estas frecuencias son adecuadas para el ECG:
