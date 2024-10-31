@@ -169,6 +169,8 @@ Describe cómo varían las potencias en LF y HF a lo largo del tiempo y qué sig
 
 Resume los hallazgos principales del análisis de HRV. Menciona cómo el SNA influye en la frecuencia cardíaca a través de la modulación en bandas LF y HF y explica la utilidad de la Transformada Wavelet Continua en este contexto.
 
+
+## Referencias
 [1]Elizabeth Coon. (2023) Generalidades sobre el sistema nervioso autónomo. Mayo Clinic
 https://www.msdmanuals.com/es/professional/trastornos-neurol%C3%B3gicos/sistema-nervioso-aut%C3%B3nomo/generalidades-sobre-el-sistema-nervioso-aut%C3%B3nomo#Anatom%C3%ADa_v1032284_es
 
