@@ -132,20 +132,16 @@ En estudios de referencia, como los publicados por Task Force of The European So
 - **Pasa altos**: 0.5 Hz, para reducir el ruido de baja frecuencia asociado a movimientos**.
 - **Pasa bajos**: 150 HZ Hz, para atenuar las altas frecuencias no relacionadas con la señal ECG.
 por los cuales se utilizaron filtros butterwoth y para saber el orden del filtro primero se diseño uno pasa bajos dejeando lo siguiente:
+
 **si sabemos que la frecuencia de corte se encuentra en -3db en 150hz y asumimos que la atenuacion se encontrara en -10db en 300hz**
-
-   
-
-
   
-
-
-
+![Captura de pantalla (2)](https://github.com/user-attachments/assets/fe8592ad-3f56-4e32-9f17-a5cabeeb6504)
 
 ### Justificación de la Elección
 Explica por qué estas frecuencias son adecuadas para el ECG:
 - El pasaaltos permite preservar los componentes de frecuencia de interés.
 - El pasabajos elimina ruidos de alta frecuencia y permite una detección precisa de los picos R.
+- De acuerdo a los valores obtenidos se utilizo un filtro butterworth de orden 4.
 - los filtros butterworth son utlizados por sus aracterísticas de suavidad y estabilidad en la respuesta de frecuencia
 ## Cálculo y Análisis de Parámetros Básicos de HRV
 
