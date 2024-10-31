@@ -163,13 +163,21 @@ print(f"Frecuencia cardíaca promedio: {heart_rate} bpm")
 - Comenta sobre el significado de estos valores en términos de la actividad simpática y parasimpática. Por ejemplo, una desviación estándar baja indica menos variabilidad, lo que podría estar relacionado con el predominio del sistema simpático.
 
 ## Espectrograma y Análisis de Bandas de Frecuencia
+![image](https://github.com/user-attachments/assets/852dad49-e5f8-4f17-aee5-3f4ec0470336)
 
-**Espectrograma**:
-Presenta el espectrograma de la señal de HRV usando la wavelet Morlet. Explica la visualización de las bandas LF y HF.
+### Análisis de Bandas de Frecuencia
 
-**Análisis Crítico de Bandas LF y HF**:
-1. **Bandas de baja frecuencia (LF, 0.04-0.15 Hz)**: Asociadas a la actividad simpática y regulación de presión arterial.
-2. **Bandas de alta frecuencia (HF, 0.15-0.4 Hz)**: Corresponden a la modulación parasimpática, como la respiración.
+En el análisis de la señal de variabilidad de la frecuencia cardíaca (HRV), se observan dos representaciones clave en las imágenes proporcionadas. La primera imagen muestra la potencia de las bandas de baja frecuencia (LF) y alta frecuencia (HF) a lo largo del tiempo, mientras que la segunda imagen presenta el espectrograma de la señal utilizando la transformada wavelet de Morlet.
+
+#### Transformada Wavelet de Morlet
+La wavelet de Morlet es una herramienta matemática utilizada para descomponer una señal en diferentes componentes de frecuencia a lo largo del tiempo, permitiendo visualizar cómo cambia el contenido de frecuencia de la señal en distintos momentos. Esto es particularmente útil para analizar la HRV, ya que permite observar la actividad en bandas de frecuencia específicas asociadas a la modulación simpática y parasimpática del sistema nervioso autónomo.
+
+#### Visualización de las Bandas de Frecuencia (LF y HF)
+En la primera gráfica, se observan las bandas de baja frecuencia (LF) de 0.04 a 0.15 Hz en color azul y las de alta frecuencia (HF) de 0.15 a 0.4 Hz en color verde. Estas bandas son relevantes en el análisis de la HRV porque están asociadas a distintos aspectos de la regulación autonómica:
+
+- **Banda de Baja Frecuencia (LF, 0.04-0.15 Hz):** Esta banda está vinculada principalmente con la actividad simpática y con la regulación de la presión arterial. La potencia en esta banda refleja la actividad del sistema nervioso simpático y se asocia con la respuesta del organismo a factores de estrés y cambios en la postura.
+  
+- **Banda de Alta Frecuencia (HF, 0.15-0.4 Hz):** La potencia en esta banda está relacionada con la modulación parasimpática, especialmente con el control de la frecuencia cardíaca a través de la respiración (respiratory sinus arrhythmia). Esta banda es un indicador de la actividad del sistema nervioso parasimpático y suele aumentar durante la respiración profunda y en momentos de relajación.
 
 ### Código de Cálculo de Potencia en LF y HF
 
@@ -190,9 +198,10 @@ plt.legend()
 plt.title('Low and High Frequency Power over Time')
 plt.show()
 ```
+#### Descripción Crítica de la Variación de Potencias en LF y HF
+A lo largo del tiempo, se observan variaciones en las potencias de las bandas LF y HF, lo cual proporciona una visión del balance simpático-parasimpático del individuo. Aumentos en la potencia de la banda LF pueden indicar una activación simpática, sugiriendo que el sistema nervioso está respondiendo a estímulos de estrés o cambios posturales. Por otro lado, incrementos en la potencia de la banda HF reflejan una mayor actividad parasimpática, indicando un estado de relajación o un patrón respiratorio regular.
 
-**Descripción Crítica**:
-Describe cómo varían las potencias en LF y HF a lo largo del tiempo y qué significa esto en términos de balance simpático-parasimpático.
+Este balance entre las potencias de las bandas LF y HF a lo largo del tiempo permite evaluar la respuesta autonómica del sujeto y el equilibrio entre las influencias simpáticas y parasimpáticas. En situaciones de salud, se espera un balance dinámico, donde ambos sistemas contribuyen a la regulación adecuada de la frecuencia cardíaca.
 
 ## Conclusión
 
