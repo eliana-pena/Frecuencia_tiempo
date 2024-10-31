@@ -139,6 +139,7 @@ por los cuales se utilizaron filtros butterwoth y para saber el orden del filtro
 
 Ahora sabiendo el orden del filtro transformamos nuestro pasa bajos en un pasa altos:
 
+![Captura de pantalla (4)](https://github.com/user-attachments/assets/376016c0-2431-4257-bbd2-171b2dea83ce)
 
 
 ### Justificación de la Elección
