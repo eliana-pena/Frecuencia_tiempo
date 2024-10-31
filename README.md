@@ -3,9 +3,9 @@
 **Actividad simpática y parasimpática del sistema nervioso autónomo**
 
 Sistema nervioso autónomo es el encargado de las acciones involuntarias del organismo, para esta labor se divide en dos sistemas principales el simpático y el parasimpático
-El sistema parasimpático es el encargado de las acciones de forma involuntaria y el control de la inhibición de los sistemas del cuerpo esto por medio de dos neurotransmisores principales la acetilcolina y la norepinefrina. Es el encargado de controlar la homeostasis de órganos particulares, lo que permite relacionarlo con la relajación del cuerpo, entre las funcione que tiene es la disminución de la frecuencia cardiaca, así como la presión arterial, estimular él tuvo digestivo, la contracción de las vías aéreas, la producción de lágrimas y salivación entre otros.
+El sistema parasimpático es el encargado de las acciones de forma involuntaria y el control de la inhibición de los sistemas del cuerpo esto por medio de dos neurotransmisores principales la acetilcolina y la norepinefrina. Es el encargado de controlar la homeostasis de órganos particulares, lo que permite relacionarlo con la relajación del cuerpo, entre las funcione que tiene es la disminución de la frecuencia cardiaca, así como la presión arterial, estimular él tuvo digestivo, la contracción de las vías aéreas, la producción de lágrimas y salivación entre otros.[1]
 
-Por otro lado, el sistema simpático es el relacionado con el sistema de defensa y huida, por lo que se encarga de controlar el cuerpo en situaciones de estrés o de emergencia, entre sus funciones están, la aceleración del ritmo cardiaco, generar vasoconstricción lo que aumenta la presión arterial, dilata la pupila, estimular el sudor, inhibición dl tubo digestivo, estimular la producción de sustancias como la glucosa entre otros.
+Por otro lado, el sistema simpático es el relacionado con el sistema de defensa y huida, por lo que se encarga de controlar el cuerpo en situaciones de estrés o de emergencia, entre sus funciones están, la aceleración del ritmo cardiaco, generar vasoconstricción lo que aumenta la presión arterial, dilata la pupila, estimular el sudor, inhibición dl tubo digestivo, estimular la producción de sustancias como la glucosa entre otros.[1]
 
 **Efecto de la actividad simpática y parasimpática en la frecuencia cardiaca**
 
@@ -19,7 +19,7 @@ La variabilidad cardiaca (HRV) es el tiempo entre cada latido, este tiene una me
 
 **Transformada Wavelet: definición, usos y tipos de wavelet utilizadas en señales biológicas.**
 
-La transformada de wavelet es una herramienta matemática para la caracterización de las partes importantes de la señal representándola sintéticamente, esta se suele implementar para el análisis de la variación-tiempo o para señales no estacionarias en la descomposición del dominio tiempo frecuencia, por lo cual representa una señal en términos de versiones trasladadas y dilatadas de onda infinita. 
+La transformada de wavelet es una herramienta matemática para la caracterización de las partes importantes de la señal representándola sintéticamente, esta se suele implementar para el análisis de la variación-tiempo o para señales no estacionarias en la descomposición del dominio tiempo frecuencia, por lo cual representa una señal en términos de versiones trasladadas y dilatadas de onda infinita.[2] 
 La transformada se define:
 
 $W_f(s, \tau) = \int f(t) \psi_{(s, \tau)}^*(t) \, dt$
@@ -33,7 +33,7 @@ donde s es el factor de escala, y τ es el factor de traslación. Los factores s
 
 Si f(t) es continua, las wavelets son continuas con el factor de escala, y las traslaciones discretas, lo que deriva en que la trasformada de Wavelet resulte en una serie de coeficientes.
 
-La función f(t) puede ser reconstruida desde los coeficientes wavelets discretos Wf(s,τ), de la siguiente manera, donde A es una constante
+La función f(t) puede ser reconstruida desde los coeficientes wavelets discretos Wf(s,τ), de la siguiente manera, donde A es una constante [3]
 
 $f(t) = A \sum_{s} \sum_{\tau} W_f(s, \tau) \, \psi_{(s, \tau)}^*(t)$
 
@@ -58,6 +58,13 @@ Con el propósito de representar ciertas funciones en diferentes escalas y posic
 ## 3. Procesamiento de la señal
 ## 6. Referencias
 
+[1]Elizabeth Coon. (2023) Generalidades sobre el sistema nervioso autónomo. Mayo Clinic
+https://www.msdmanuals.com/es/professional/trastornos-neurol%C3%B3gicos/sistema-nervioso-aut%C3%B3nomo/generalidades-sobre-el-sistema-nervioso-aut%C3%B3nomo#Anatom%C3%ADa_v1032284_es
+
+
+[2] Vizzarri, P., Vampa, V., & Martín, M. T. (2019). TRANSFORMADA WAVELET Y TEORÍA DE LA INFORMACIÓN EN EL ANÁLISIS DE SEÑALES BIOLÓGICAS. Investigación Joven, 6(Especial), 187. Recuperado a partir de https://revistas.unlp.edu.ar/InvJov/article/view/7118
+
+[3] DESCOMPOSICIÓN DE SEÑALES, A. D. T. (2006). Introducción a la Transformada Wavelet. Departamento de Señales y sistemas. Universidad de Navarra. https://users.exa.unicen.edu.ar/catedras/escuelapav/cursos/wavelets/apunte.pdf
 
 
 
