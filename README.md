@@ -28,7 +28,7 @@ Como se mencionó anteriormente, estos dos sistemas se encargan de las variacion
 
 **Variabilidad de la frecuencia cardiaca (HRV) medida como fluctuaciones en el intervalo R-R, y las frecuencias de interés en este análisis** 
 
-La variabilidad cardiaca (HRV) es el tiempo entre cada latido, este tiene una medida de ms, y este está influido por el sistema nervioso autónomo, lo que lo liga directamente a un equilibrio con el sistema simpático y el parasimpático, la adquisición de la desviación estándar, esta variabilidad depende de varios factores, en los que uno muy presente es la edad, esta variabilidad, está alrededor de los 70 ms entre los 60-70 años, y esta va disminuyendo con el tiempo. Existen otra serie de factores que pueden indicar variaciones en la frecuencia cardiaca, entre ellas están el estrés, sedentarismo, alimentación o el consumo de sustancias. Por lo cual se puede implementar como un indicador de Salud. Entre las frecuencias vinculadas encontramos las siguientes.[4], en lo referente a las frecuencias predominantes encontramos unos valores estimados para un filtro pasa banda estaria entre 0.5 -12 Hz
+La variabilidad cardiaca (HRV) es el tiempo entre cada latido, este tiene una medida de ms, y este está influido por el sistema nervioso autónomo, lo que lo liga directamente a un equilibrio con el sistema simpático y el parasimpático, la adquisición de la desviación estándar, esta variabilidad depende de varios factores, en los que uno muy presente es la edad, esta variabilidad, está alrededor de los 70 ms entre los 60-70 años, y esta va disminuyendo con el tiempo. Existen otra serie de factores que pueden indicar variaciones en la frecuencia cardiaca, entre ellas están el estrés, sedentarismo, alimentación o el consumo de sustancias. Por lo cual se puede implementar como un indicador de Salud. Entre las frecuencias vinculadas encontramos las siguientes.[4], en lo referente a las frecuencias predominantes encontramos unos valores estimados para un filtro pasa banda estaria entre 0.5 a 150 Hz
 
 **Transformada Wavelet: definición, usos y tipos de wavelet utilizadas en señales biológicas.**
 
@@ -130,7 +130,7 @@ En estudios de referencia, como los publicados por Task Force of The European So
 
 **Filtros Utilizados**: **Segun el articulo publicado por Ge Healthcare [4] los filtros recomendados para una señal ECG son de:
 - **Pasa altos**: 0.5 Hz, para reducir el ruido de baja frecuencia asociado a movimientos**.
-- **Pasa bajos**: 150 HZ Hz, para atenuar las altas frecuencias no relacionadas con la señal ECG.
+- **Pasa bajos**: 150 Hz, para atenuar las altas frecuencias no relacionadas con la señal ECG.
 por los cuales se utilizaron filtros butterwoth y para saber el orden del filtro primero se diseño uno pasa bajos dejeando lo siguiente:
 
 **si sabemos que la frecuencia de corte se encuentra en -3db en 150hz y asumimos que la atenuacion se encontrara en -10db en 300hz**
