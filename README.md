@@ -128,10 +128,9 @@ En estudios de referencia, como los publicados por Task Force of The European So
 
 ## Diseño y Justificación de Filtros
 
-**Filtros Utilizados**: Se implemto un filtro pasa banda butterworth de orden 4 para eliminar ruidos indeseados.
-Se encontraron las siguientes frecuencias de corte de un ecg dentro de la literatura
+**Filtros Utilizados**: Segun el articulo publicado por Ge Healthcare los filtros recomendados para una señal ECG son de:
 - **Pasaaltos**: 0.5 Hz, para reducir el ruido de baja frecuencia asociado a movimientos.
-- **Pasabajos**: 40 Hz, para atenuar las altas frecuencias no relacionadas con la señal ECG.
+- **Pasabajos**: 150 HZ Hz, para atenuar las altas frecuencias no relacionadas con la señal ECG.
 
 
 
