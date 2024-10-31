@@ -137,17 +137,17 @@ por los cuales se utilizaron filtros butterwoth y para saber el orden del filtro
   
 ![Captura de pantalla (3)](https://github.com/user-attachments/assets/d74b202f-a182-468f-b2d9-c994c4fc5805)
 
-Ahora sabiendo el orden del filtro transformamos nuestro pasa bajos en un pasa altos:
+
+funcion de transferencia del orden 4:
 
 ![Captura de pantalla (4)](https://github.com/user-attachments/assets/376016c0-2431-4257-bbd2-171b2dea83ce)
-
 
 ### Justificación de la Elección
 Explica por qué estas frecuencias son adecuadas para el ECG:
 - El pasaaltos permite preservar los componentes de frecuencia de interés.
 - El pasabajos elimina ruidos de alta frecuencia y permite una detección precisa de los picos R.
 - De acuerdo a los valores obtenidos se utilizo un filtro butterworth de orden 4.
-- los filtros butterworth son utlizados por sus aracterísticas de suavidad y estabilidad en la respuesta de frecuencia
+- los filtros butterworth son utlizados por sus características de suavidad y estabilidad en la respuesta de frecuencia
 ## Cálculo y Análisis de Parámetros Básicos de HRV
 
 **Parámetros Calculados**:
