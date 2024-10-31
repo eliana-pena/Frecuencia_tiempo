@@ -27,8 +27,7 @@ Como se mencionó anteriormente, estos dos sistemas se encargan de las variacion
 
 **Variabilidad de la frecuencia cardiaca (HRV) medida como fluctuaciones en el intervalo R-R, y las frecuencias de interés en este análisis** 
 
-La variabilidad cardiaca (HRV) es el tiempo entre cada latido, este tiene una medida de ms, y este está influido por el sistema nervioso autónomo, lo que lo liga directamente a un equilibrio con el sistema simpático y el parasimpático, la adquisición de la desviación estándar, esta variabilidad depende de varios factores, en los que uno muy presente es la edad, esta variabilidad, está alrededor de los 70 ms entre los 60-70 años, y esta va disminuyendo con el tiempo. Existen otra serie de factores que pueden indicar variaciones en la frecuencia cardiaca, entre ellas están el estrés, sedentarismo, alimentación o el consumo de sustancias. Por lo cual se puede implementar como un indicador de Salud. Entre las frecuencias vinculadas encontramos las siguientes.
-0.004- 015 Hz es asociada al a actividad simpática y parasimpática, mientras
+La variabilidad cardiaca (HRV) es el tiempo entre cada latido, este tiene una medida de ms, y este está influido por el sistema nervioso autónomo, lo que lo liga directamente a un equilibrio con el sistema simpático y el parasimpático, la adquisición de la desviación estándar, esta variabilidad depende de varios factores, en los que uno muy presente es la edad, esta variabilidad, está alrededor de los 70 ms entre los 60-70 años, y esta va disminuyendo con el tiempo. Existen otra serie de factores que pueden indicar variaciones en la frecuencia cardiaca, entre ellas están el estrés, sedentarismo, alimentación o el consumo de sustancias. Por lo cual se puede implementar como un indicador de Salud. Entre las frecuencias vinculadas encontramos las siguientes.[4], en lo referente a las frecuencias predominantes encontramos unos valores estimados de 0.004- 015 Hz es asociada al a actividad simpática y parasimpática, mientras
 0.15 – 0.4 Hz para el para simpático.
 
 **Transformada Wavelet: definición, usos y tipos de wavelet utilizadas en señales biológicas.**
@@ -178,6 +177,8 @@ https://www.msdmanuals.com/es/professional/trastornos-neurol%C3%B3gicos/sistema-
 [2] Vizzarri, P., Vampa, V., & Martín, M. T. (2019). TRANSFORMADA WAVELET Y TEORÍA DE LA INFORMACIÓN EN EL ANÁLISIS DE SEÑALES BIOLÓGICAS. Investigación Joven, 6(Especial), 187. Recuperado a partir de https://revistas.unlp.edu.ar/InvJov/article/view/7118
 
 [3] DESCOMPOSICIÓN DE SEÑALES, A. D. T. (2006). Introducción a la Transformada Wavelet. Departamento de Señales y sistemas. Universidad de Navarra. https://users.exa.unicen.edu.ar/catedras/escuelapav/cursos/wavelets/apunte.pdf
+
+[4]A. Galan (2023).¿Qué es la variabilidad de frecuencia cardíaca (HRV)? Neolifesalud. https://www.neolifesalud.com/blog/prevencion-y-antiaging/que-es-la-variabilidad-de-frecuencia-cardiaca-hrv/
 
 
 
