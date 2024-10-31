@@ -10,6 +10,7 @@ Por otro lado, el sistema simpático es el relacionado con el sistema de defensa
 **Efecto de la actividad simpática y parasimpática en la frecuencia cardiaca**
 
 Como se mencionó anteriormente, estos dos sistemas se encargan de las variaciones en la actividad cardiaca, como en la presión arterial siendo el sistema simpático el que se encarga de aumentar la frecuencia cardiaca, y la vaso construcción de las arterias, mientras el simpático de disminuir la frecuencia cardiaca y la vaso dilatación.
+
 **Variabilidad de la frecuencia cardiaca (HRV) medida como fluctuaciones en el intervalo R-R, y las frecuencias de interés en este análisis** 
 
 La variabilidad cardiaca (HRV) es el tiempo entre cada latido, este tiene una medida de ms, y este está influido por el sistema nervioso autónomo, lo que lo liga directamente a un equilibrio con el sistema simpático y el parasimpático, la adquisición de la desviación estándar, esta variabilidad depende de varios factores, en los que uno muy presente es la edad, esta variabilidad, está alrededor de los 70 ms entre los 60-70 años, y esta va disminuyendo con el tiempo. Existen otra serie de factores que pueden indicar variaciones en la frecuencia cardiaca, entre ellas están el estrés, sedentarismo, alimentación o el consumo de sustancias. Por lo cual se puede implementar como un indicador de Salud. Entre las frecuencias vinculadas encontramos las siguientes.
