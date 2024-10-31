@@ -101,9 +101,13 @@ print(f"Desviación estándar de la señal cruda: {std_ecg}")
 
 ## Diseño y Justificación de Filtros
 
-**Filtros Utilizados**: Implementación de un filtro pasaaltos y un pasabajos para eliminar ruidos indeseados.
+**Filtros Utilizados**: Se implemto un filtro pasa banda butterworth de orden 4 para eliminar ruidos indeseados.
+Se encontraron las siguientes frecuencias de corte de un ecg dentro de la literatura
 - **Pasaaltos**: 0.5 Hz, para reducir el ruido de baja frecuencia asociado a movimientos.
 - **Pasabajos**: 40 Hz, para atenuar las altas frecuencias no relacionadas con la señal ECG.
+
+
+
 
 ### Justificación de la Elección
 Explica por qué estas frecuencias son adecuadas para el ECG:
