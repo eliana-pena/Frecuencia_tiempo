@@ -52,7 +52,8 @@ $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 1 \quad \text{si} \quad 
 
 ![image](https://github.com/user-attachments/assets/68d02e11-ea0a-4a4a-be5c-cc85876a67a0)
 
-
+## 2. Metodologia
+## 3. Procesamiento de la señal
 ## 6. Referencias
 
 
