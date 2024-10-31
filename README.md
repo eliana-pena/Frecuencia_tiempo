@@ -1,5 +1,3 @@
-# Frecuencia_tiempo
-
 # Análisis de Variabilidad de la Frecuencia Cardíaca (HRV) usando Transformada Wavelet Continua
 
 ## Tabla de Contenidos
@@ -14,6 +12,9 @@
 
 
 ## 1. Introducción
+
+La respuesta de variabilidad de la frecuencia cardíaca es un aspecto fisiológico que puede tener repercusión en varios indicadores de salud, siendo así que permite evaluar la salud del sistema cardiovascular y su respuesta a diferentes estímulos. Teniendo en cuenta lo antes mencionado, el siguiente laboratorio tiene el propósito de procesar una señal EMG, para establecer como la variabilidad cardiaca puede llegar a ser un indicador de salud, a la señal luego de su filtrado y el establecimiento de datos estadísticos referentes a la frecuencia cardiaca, Se le realizara una trasformada de wavelet teniendo una Molet como la onda madre, que permita rescatar las características necesarias de la señal.
+
 **Actividad simpática y parasimpática del sistema nervioso autónomo**
 
 Sistema nervioso autónomo es el encargado de las acciones involuntarias del organismo, para esta labor se divide en dos sistemas principales el simpático y el parasimpático
