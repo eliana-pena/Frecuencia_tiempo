@@ -48,9 +48,10 @@ $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 1 \quad \text{si} \quad 
 
  $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 0 \quad \text{en cualquier otro caso}$
 
-**Tipos**
+**Tipos de Ondas Wavelets**
 
- ![image](https://github.com/user-attachments/assets/3eb42198-fd0b-40a3-8901-5ae802544546)
+![image](https://github.com/user-attachments/assets/68d02e11-ea0a-4a4a-be5c-cc85876a67a0)
+
 
 ## 6. Referencias
 
