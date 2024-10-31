@@ -205,7 +205,9 @@ Este balance entre las potencias de las bandas LF y HF a lo largo del tiempo per
 
 ## Conclusión
 
-Resume los hallazgos principales del análisis de HRV. Menciona cómo el SNA influye en la frecuencia cardíaca a través de la modulación en bandas LF y HF y explica la utilidad de la Transformada Wavelet Continua en este contexto.
+En conclusión, la transformada de wavelet durante el laboratorio se demostró como una herramienta útil para la descomposición del dominio del tiempo y la frecuencia, implementada así en el laboratorio la onda Molet que en señales EMG permite resaltar los datos más relevantes de los complejos QRS de la señales cardiacas, dando como resultado que podamos analizar a una persona desde el conocimiento de su variabilidades en la frecuencia cardiaca, donde pudimos analizar a una persona que da valores normales con respecto a la literatura.
+
+(Resume los hallazgos principales del análisis de HRV. Menciona cómo el SNA influye en la frecuencia cardíaca a través de la modulación en bandas LF y HF y explica la utilidad de la Transformada Wavelet Continua en este contexto.)
 
 
 ## Referencias
