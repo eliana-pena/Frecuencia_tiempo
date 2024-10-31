@@ -15,6 +15,7 @@ La variabilidad cardiaca (HRV) es el tiempo entre cada latido, este tiene una me
 **Transformada Wavelet: definición, usos y tipos de wavelet utilizadas en señales biológicas.**
 La transformada de wavelet es una herramienta matemática para la caracterización de las partes importantes de la señal representándola sintéticamente, esta se suele implementar para el análisis de la variación-tiempo o para señales no estacionarias en la descomposición del dominio tiempo frecuencia, por lo cual representa una señal en términos de versiones trasladadas y dilatadas de onda infinita. 
 La transformada se define:
+
 $W_f(s, \tau) = \int f(t) \psi_{(s, \tau)}^*(t) \, dt$
 
 $\psi_{(s, \tau)}^*(t) = \frac{1}{\sqrt{2}} \, \psi\left(\frac{t - \tau}{s}\right)$
