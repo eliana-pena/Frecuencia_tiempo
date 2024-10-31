@@ -50,6 +50,8 @@ $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 1 \quad \text{si} \quad 
 
 **Tipos de Ondas Wavelets**
 
+Con el propósito de representar ciertas funciones en diferentes escalas y posiciones, existen una serie de tipos de señales estandarizadas, para permitirnos suele implementar para el análisis de la variación-tiempo, en la siguiente imagen encontraremos varios tipos de señales, de las culés se implementará la Morlet como la transformada implementada en la señal, esto debido a que nos permitirá identificar frecuencias especificas en la señal adquirida, junto a su locación temporal.
+
 ![image](https://github.com/user-attachments/assets/68d02e11-ea0a-4a4a-be5c-cc85876a67a0)
 
 ## 2. Metodologia
