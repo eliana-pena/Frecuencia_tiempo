@@ -135,7 +135,8 @@ por los cuales se utilizaron filtros butterwoth y para saber el orden del filtro
 
 **si sabemos que la frecuencia de corte se encuentra en -3db en 150hz y asumimos que la atenuacion se encontrara en -10db en 300hz**
   
-![Captura de pantalla (2)](https://github.com/user-attachments/assets/fe8592ad-3f56-4e32-9f17-a5cabeeb6504)
+![Captura de pantalla (3)](https://github.com/user-attachments/assets/d74b202f-a182-468f-b2d9-c994c4fc5805)
+
 
 ### Justificación de la Elección
 Explica por qué estas frecuencias son adecuadas para el ECG:
