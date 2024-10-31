@@ -1,4 +1,18 @@
 # Frecuencia_tiempo
+
+# Análisis de Variabilidad de la Frecuencia Cardíaca (HRV) usando Transformada Wavelet Continua
+
+## Tabla de Contenidos
+1. [Introducción](#introducción)
+2. [Resumen Teórico](#resumen-teórico)
+3. [Diagrama de Proyecto](#diagrama-de-proyecto)
+4. [Análisis de la Señal Cruda](#análisis-de-la-señal-cruda)
+5. [Diseño y Justificación de Filtros](#diseño-y-justificación-de-filtros)
+6. [Cálculo y Análisis de Parámetros Básicos de HRV](#cálculo-y-análisis-de-parámetros-básicos-de-hrv)
+7. [Espectrograma y Análisis de Bandas de Frecuencia](#espectrograma-y-análisis-de-bandas-de-frecuencia)
+8. [Conclusión](#conclusión)
+
+
 ## 1. Introducción
 **Actividad simpática y parasimpática del sistema nervioso autónomo**
 
@@ -54,9 +68,106 @@ Con el propósito de representar ciertas funciones en diferentes escalas y posic
 
 ![image](https://github.com/user-attachments/assets/68d02e11-ea0a-4a4a-be5c-cc85876a67a0)
 
-## 2. Metodologia
-## 3. Procesamiento de la señal
-## 6. Referencias
+
+### Variabilidad de la Frecuencia Cardíaca (HRV)
+Explica la HRV como un indicador de salud cardiovascular, representado por la variabilidad en los intervalos R-R. Destaca cómo el SNA modula la HRV y su interpretación mediante las bandas de frecuencia. Justifica el uso de la wavelet Morlet para HRV debido a su precisión en la detección de cambios en el tiempo-frecuencia.
+
+## Diagrama de Proyecto
+
+Incluir un diagrama de flujo que muestre los pasos del proyecto:
+1. **Carga de datos**: Lectura de la señal ECG desde el archivo.
+2. **Preprocesamiento de la señal**: Aplicación de filtros (pasaaltos y pasabajos) para reducir el ruido.
+3. **Detección de picos R**: Uso de `find_peaks` para identificar los picos R en la señal filtrada.
+4. **Cálculo de intervalos R-R**: Extracción y cálculo de intervalos entre picos R consecutivos.
+5. **Interpolación de señal HRV**: Creación de una señal continua a partir de los intervalos R-R.
+6. **Transformada Wavelet Continua**: Descomposición de la señal en frecuencia usando la wavelet Morlet.
+7. **Análisis de Potencia**: Análisis de bandas LF y HF para interpretar la modulación simpática y parasimpática.
+
+## Análisis de la Señal Cruda
+
+Muestra la señal ECG original e incluye:
+- **Frecuencia de muestreo**: Especificar 1000 Hz como frecuencia de muestreo utilizada.
+- **Tiempo total de muestreo**: Mencionar que la señal representa 5 minutos de duración.
+- **Niveles de cuantificación**: Especificar el número de bits de cuantificación si se conoce.
+- **Estadísticas**: Calcular y mostrar la media, desviación estándar, y otras estadísticas de interés para la señal cruda.
+
+### Código para Cálculo de Estadísticas
+
+```python
+# Estadísticas principales de la señal cruda
+mean_ecg = np.mean(ecg_signal)
+std_ecg = np.std(ecg_signal)
+print(f"Media de la señal cruda: {mean_ecg}")
+print(f"Desviación estándar de la señal cruda: {std_ecg}")
+```
+
+## Diseño y Justificación de Filtros
+
+**Filtros Utilizados**: Implementación de un filtro pasaaltos y un pasabajos para eliminar ruidos indeseados.
+- **Pasaaltos**: 0.5 Hz, para reducir el ruido de baja frecuencia asociado a movimientos.
+- **Pasabajos**: 40 Hz, para atenuar las altas frecuencias no relacionadas con la señal ECG.
+
+### Justificación de la Elección
+Explica por qué estas frecuencias son adecuadas para el ECG:
+- El pasaaltos permite preservar los componentes de frecuencia de interés.
+- El pasabajos elimina ruidos de alta frecuencia y permite una detección precisa de los picos R.
+
+## Cálculo y Análisis de Parámetros Básicos de HRV
+
+**Parámetros Calculados**:
+1. **Media de intervalos R-R**: Calculada y convertida a frecuencia cardíaca promedio.
+2. **Desviación estándar de intervalos R-R**: Refleja la variabilidad en la frecuencia cardíaca.
+
+### Código para Cálculo de Parámetros Básicos
+
+```python
+# Calcular frecuencia cardíaca promedio y desviación estándar
+mean_rr = np.mean(rr_intervals)
+std_rr = np.std(rr_intervals)
+heart_rate = 60 / mean_rr  # Frecuencia cardíaca promedio en bpm
+print(f"Media de intervalos R-R: {mean_rr} s")
+print(f"Desviación estándar de intervalos R-R: {std_rr} s")
+print(f"Frecuencia cardíaca promedio: {heart_rate} bpm")
+```
+
+**Análisis**:
+- Comenta sobre el significado de estos valores en términos de la actividad simpática y parasimpática. Por ejemplo, una desviación estándar baja indica menos variabilidad, lo que podría estar relacionado con el predominio del sistema simpático.
+
+## Espectrograma y Análisis de Bandas de Frecuencia
+
+**Espectrograma**:
+Presenta el espectrograma de la señal de HRV usando la wavelet Morlet. Explica la visualización de las bandas LF y HF.
+
+**Análisis Crítico de Bandas LF y HF**:
+1. **Bandas de baja frecuencia (LF, 0.04-0.15 Hz)**: Asociadas a la actividad simpática y regulación de presión arterial.
+2. **Bandas de alta frecuencia (HF, 0.15-0.4 Hz)**: Corresponden a la modulación parasimpática, como la respiración.
+
+### Código de Cálculo de Potencia en LF y HF
+
+```python
+# Análisis de Potencia en LF y HF
+lf_band = (frequencies >= 0.04) & (frequencies < 0.15)
+hf_band = (frequencies >= 0.15) & (frequencies < 0.4)
+
+lf_power = power[lf_band, :].mean(axis=0)
+hf_power = power[hf_band, :].mean(axis=0)
+
+plt.figure(figsize=(10, 4))
+plt.plot(time_interp, lf_power, label='LF Power (0.04-0.15 Hz)', color='blue')
+plt.plot(time_interp, hf_power, label='HF Power (0.15-0.4 Hz)', color='green')
+plt.xlabel('Time (s)')
+plt.ylabel('Power')
+plt.legend()
+plt.title('Low and High Frequency Power over Time')
+plt.show()
+```
+
+**Descripción Crítica**:
+Describe cómo varían las potencias en LF y HF a lo largo del tiempo y qué significa esto en términos de balance simpático-parasimpático.
+
+## Conclusión
+
+Resume los hallazgos principales del análisis de HRV. Menciona cómo el SNA influye en la frecuencia cardíaca a través de la modulación en bandas LF y HF y explica la utilidad de la Transformada Wavelet Continua en este contexto.
 
 [1]Elizabeth Coon. (2023) Generalidades sobre el sistema nervioso autónomo. Mayo Clinic
 https://www.msdmanuals.com/es/professional/trastornos-neurol%C3%B3gicos/sistema-nervioso-aut%C3%B3nomo/generalidades-sobre-el-sistema-nervioso-aut%C3%B3nomo#Anatom%C3%ADa_v1032284_es
