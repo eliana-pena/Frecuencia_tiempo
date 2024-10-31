@@ -41,3 +41,14 @@ Los factores de escala y traslación de las wavelets discretas pueden ser expres
  $s = s_0^i \quad \text{y} \quad \tau = k \tau_0 s_0^i$
 
 donde el exponente i y la constante k son enteros, y s0 > 1 es un paso fijo de dilatación.
+
+Mientras que la ortonormal, representa una señal con su mismo comportamiento
+
+$\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 1 \quad \text{si} \quad i = m \, \text{y} \, k = n$
+
+ $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 0 \quad \text{en cualquier otro caso}$
+
+
+
+
+
