@@ -48,6 +48,11 @@ $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 1 \quad \text{si} \quad 
 
  $\int \psi_{(s, \tau)}^*(t) \, \psi_{(m, n)}(t) \, dt = 0 \quad \text{en cualquier otro caso}$
 
+**Tipos**
+
+ ![image](https://github.com/user-attachments/assets/3eb42198-fd0b-40a3-8901-5ae802544546)
+
+
 
 
 
